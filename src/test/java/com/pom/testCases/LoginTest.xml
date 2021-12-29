@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="OrangeHRM_Test">
+
+	<listeners>
+		<listener class-name="com.pom.utilities.Reporting" />
+	</listeners>
+
+	<test name="LoginTest">
+
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.pom.testCases.LoginTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

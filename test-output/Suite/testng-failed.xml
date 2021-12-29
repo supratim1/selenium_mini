@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="2" name="Login_Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.pom.testCases.LoginTest">
+        <methods>
+          <include name="Test2"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.pom.testCases.LoginTest -->
+    </classes>
+  </test> <!-- Login_Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
